@@ -1,0 +1,269 @@
+body
+{
+    background-image: url(/IMG/BACKGROUNDS/fundo\ site.jpg);
+    margin: 0;
+}
+main{
+    margin-top: 200px;
+    padding: 50px;
+    padding: 50px;
+    background-image: url(/IMG/man-320276_1280.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+/* HEADER ESTILOS */
+header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0A2A9B;
+    padding: 1%;
+    z-index: 5;
+    
+}
+.menu{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+/* IMAGENS HEADER */
+.logo{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+}
+.logoP{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+   
+}
+/* .botoes
+{
+    position:fixed;
+    background-color: #0037ffb6;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    filter:drop-shadow(0px 0px 5px rgb(2, 61, 255)); 
+
+} */
+
+/* classe para centralizar */ 
+.m{ display: grid; place-items: center;}
+
+
+
+/*  */
+
+footer{
+    background-color: #0A2A9B;
+    margin-bottom: 0;
+    padding: 1%;
+}
+a{
+    text-decoration: none;
+}
+
+h1:hover{
+    color: #000;
+    transition: all 0.5s;
+    filter:drop-shadow(0px 0px 5px #ffffff); /*ANIMAÇÃO DE CORES AO REDOR DA DIv*/ 
+    filter:drop-shadow(2px 2px 5px rgb(255, 255, 255)); /*ANIMAÇÃO DE CORES AO REDOR DA VIDA*/
+    transform: scale(1.1);
+    opacity: 1.5;
+}
+h2{
+    border-bottom: 1px #0A2A9B solid;
+}
+
+.ancora{
+    text-decoration: none;
+    border: solid 1px #fff;
+    border-radius: 3px;
+    color: #FFFF;
+    background-color: #000;
+    padding: 7px;
+    font-weight: bold;
+}
+.ancora:hover{
+    background-color: #fff;
+    transition: all 0.5s;
+    color: #000;
+}
+
+
+.proj{
+    font-size: 50px;
+    color: #fff;
+}
+.ini{
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* section 1 TecTodos */
+.inicioTexto{
+    font-size: 150%;
+}
+.inicioTexto2{
+    font-size: 150%;
+}
+
+/* section 2 importancia da tec */
+.importanciaTec{
+    background-image: url(/IMG/girl-320262_1280.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+.paragrafoImporTec{
+    background-color: #f9fbfc73;
+}
+
+/* div dos cards */
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    
+}
+.card1{
+    background-color: #078fff67;
+    border: 1px solid #bbc8f8;
+    padding: 5px;
+    font-size: 17px;
+    filter:drop-shadow(0px 0px 5px rgb(2, 61, 255)); 
+    /* ANIMAÇÃO DE CORES DA Div */
+}
+.card2{
+    background-color: #078fff67;
+    border: 1px solid #0A2A9B;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+}
+
+/* SECTION 3 CARENCIA DE TEC */
+.fim{
+    background-color: #fefeff4b;
+    filter:drop-shadow(0px 0px 5px rgb(227, 230, 240)); /*ANIMAÇÃO DE CORES DA Div*/
+}
+
+/* CARDS DA SESSÃO 3 */
+
+.cards3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card3{
+    display: grid;
+    grid-template-columns:1fr 2fr ;
+    place-items: center;
+    border: 1px solid #0A2A9B;
+    margin: 2px 1px;
+    background-color: #2cbef8ad;
+}
+
+.icon{
+height: 50px;
+width: 50px;
+}
+
+/*  */
+li{
+    font-size: 25px;
+    margin-top: 10px;
+}
+span{
+    display: block;
+    margin-top: 15px;
+}
+.tecTodos{
+    display: grid;
+    place-items: center;
+}
+
+
+.subTexto{
+    font-weight: bolder;
+     font-size: 21px;
+}
+
+
+
+
+/* RESPONSIVIDADE */
+@media(max-width: 1000px){
+    .proj{
+        display: none;
+    }
+    .menu{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 778px){
+    .logoP{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 755px){
+    .menu{
+        grid-template-columns: 1fr ;
+        padding-bottom: 10px;
+    }
+}
+@media(max-width: 650px){
+    .cards{
+        grid-template-columns: 1fr ;
+    }
+    .cards3{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 300px){
+    .icon{
+        display: none;
+    }
+    .card3{
+        grid-template-columns: 1fr;
+        padding: 4px;
+    }
+}
+
+
+
+/* FOOTER */
+
+.aviso{
+    font-size: 30px;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.feedback{
+    font-size: 25px;
+}
+
+.cabecalho{
+    display: grid;
+    place-items: center;
+}
+.icone{
+    color: #000;
+    height: 50px;
+    width: 50px;
+}
+.icone:hover{
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.social{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
